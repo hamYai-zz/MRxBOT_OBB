@@ -13,8 +13,8 @@ else
   mkdir /sdcard/Download/MRxBOT_obb
 fi
 
-   pak_folder="/data/data/com.termux/files/home/PakTool/pak_folder"
-   output_folder="/data/data/com.termux/files/home/PakTool/output_folder"
+   pak_folder="/sdcard/Download/MRxBOT_obb/pak_folder"
+   output_folder="/sdcard/Download/MRxBOT_obb/output_folder"
 
  unpacking () {
   qemu-i386 $PREFIX/share/quickbms/quickbms_4gb_files etc/*.bms $pak_folder/$(basename "$selected_file") $output_folder
